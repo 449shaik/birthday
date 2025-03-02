@@ -1,0 +1,179 @@
+/* ilma_bir.css */
+
+body {
+    font-family: 'Arial', sans-serif; /* A more modern font */
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet; /* Lighter background */
+    color: #333; /* Darker text color */
+    line-height: 1.6; /* Improved readability */
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px; /* Limit container width */
+    margin: 30px auto; /* More top/bottom margin */
+    background-image: linear-gradient( 135deg, #FFD26F 10%, #3677FF 100%);
+    background-image: linear-gradient( 135deg, #81FFEF 10%, #F067B4 100%);
+    padding: 30px; /* More padding */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* More prominent shadow */
+}
+
+.tab_box {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px; /* More margin */
+    border-bottom: 3px solid red; /* Add a subtle border */
+    padding-bottom: 10px;
+}
+
+.tab_btn {
+    background-color: #5dade2; /* A brighter blue */
+    color: #fff;
+    border: none;
+    padding: 12px 24px; /* Slightly larger buttons */
+    border-radius: 8px; /* More rounded button corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add transform for a subtle click effect */
+    font-size: 16px; /* Slightly larger font */
+}
+
+.tab_btn:hover {
+    background-color: #2e86c1; /* Darker blue on hover */
+}
+
+.tab_btn.active {
+    background-color: #2e86c1;
+    font-weight: 600; /* Semi-bold font */
+    transform: scale(1.05); /* Button pop effect when active */
+}
+
+
+
+.content {
+    display: none;
+    padding: 20px;
+    border: 3px solid #80fdbb; /* Lighter border */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.content.active {
+    display: block;
+}
+
+h2 {
+    color: #3498db; /* Blue headings */
+    margin-bottom: 15px;
+    font-size: 24px; /* Larger heading font */
+    border-bottom: 3px solid #a3b4c4; /* Add a subtle line under heading */
+    padding-bottom: 8px;
+}
+
+p {
+    line-height: 1.7;
+    color: #555;
+    font-size: 16px; /* Slightly larger font */
+}
+
+/* Image styling */
+#images img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* Subtle shadow for images */
+    margin: 5px;
+    transition: transform 0.2s ease; /* Add transition for a subtle hover effect */
+}
+
+#images img:hover {
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.circle-container {
+    width: 150px;  /* Size of the circle */
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;  /* Ensures image stays within circle */
+    border: 3px solid #1bb566; /* Optional border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto; /* Center the circle */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+.circle-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the whole circle */
+}
+
+.home-content {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-container {
+    background: black;
+    width: 70%;
+    max-width: 300px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+}
+#images img {
+width: 280px;
+height: 260px;
+object-fit: cover;
+border-radius: 8px; /* Rounded corners for images */
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); /* Subtle shadow for images */
+margin: 5px;
+transition: transform 0.2s ease; 
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
