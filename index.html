@@ -3,114 +3,186 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="theme-color" content="#1bb566">
-    <title>Birthday Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="tab_box">
-            <button class="tab_btn" onclick="showTab('home')">HOME</button>
-            
-             
-            <!-- <button class="tab_btn" onclick="showTab('about')">ABOUT</button> -->
-            <button class="tab_btn" onclick="showTab('birthday')">BIRTHDAY WISH</button>
-            <button class="tab_btn" onclick="showTab('images')">IMAGES</button>
+    <header>
+    <div class="navbar">
+        <div class="nav-logo border">
+            <div class="logo"></div>
+        </div>
+        <div class="nav-address border">
+            <p class="add-first">Deliver to</p>
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="add-second">India</p>
+            </div>
+        </div>
+        <div class="nav-search">
+            <select class="search-select">
+                <option>All</option>
+            </select>
+            <input placeholder="Search Amazon" class="search-input">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="nav-singin border ">
+            <p><span>Hello, sing in</span></p>
+            <p class="nav-second">Account & Lists</p>
         </div>
 
-
-        <!-- Content Sections -->
-        <div class="container_box">
-            <div id="home" class="content active">
-                <h2>Home</h2>
-                <div class="circle-container">
-                    <img src="https://files.oaiusercontent.com/file-YbenxchevLEvpatwHSvnxu?se=2025-02-23T08%3A05%3A21Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Df409f25e-e85c-4703-89ce-e4280b995719.webp&sig=aRN9inoSdsEv8d8KJY8H0XC3E%2B%2BBxipQA9oeAbSzi2I%3D" alt="Profile">
-                </div>
-                <p>Happy Birthday! 🎂🎉
-
-                    May your every day be filled with happiness,
-                    May all your dreams come true and your life shine with success.
-                    May success always be by your side,
-                    And love and smiles never leave your path.
-
-                    Wishing you a long life, good health, and endless joy!
-                    Many happy returns of the day! 🥳✨</p>
-                    <p></p>
-            </div>
-            <div id="about" class="content">
-                <h2>ABOUT</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ab, dicta odio cumque similique
-                    quos nobis expedita deleniti. Inventore illo reprehenderit aspernatur sapiente temporibus eius
-                    laudantium odio. Nam laborum fugit, voluptatum veritatis obcaecati vitae vel maiores suscipit
-                    distinctio laudantium cumque. Nulla, accusamus perferendis autem ipsam numquam aperiam, officiis, ut
-                    voluptate a optio possimus obcaecati. Natus quisquam nemo, eum, dignissimos error ex dolore in
-                    assumenda molestias, quidem ipsa et necessitatibus mollitia ullam nulla illum! Numquam nihil dolorem
-                    vel repudiandae distinctio ab nesciunt esse nobis corrupti sed, fugiat porro. Unde ullam a libero,
-                    soluta pariatur explicabo voluptates aperiam sequi, cumque doloribus tempora?</p>
-            </div>
-
-            <div id="birthday" class="content">
-                <h2>BIRTHDAY</h2>
-                <p>हर साल ये दिन आए, हर साल ये दिल गाए,
-                    तू जिए हज़ारों साल, बस यही दुआ है हमारी।
-                    जन्मदिन मुबारक हो प्यारे दोस्त,
-                    तेरी दोस्ती से ही तो है, ये ज़िन्दगी गुलज़ारी।</p>
-                    <p>नया सवेरा, नई उमंग, हर दिन हो सुनहरा,
-                        खुशियाँ मनाओ तुम, हर पल बने सुनहरा।
-                        जन्मदिन की ये शुभ घड़ी, लाए खुशियाँ अपार,
-                        मुबारक हो तुमको ये दिन, मेरे दिल से बार बार।</p>
-                <p>"Happy Birthday! May your day be as incredible as you are."
-
-                    "Wishing you a birthday filled with joy, love, and everything your heart desires."
-                    
-                    "Happy Birthday to someone who makes the world a brighter place."
-                    
-                    "May your birthday be the best one yet! Happy Birthday!"</p>
-                    
-            </div>
-
-            <div id="images" class="content">
-                <h2>IMAGES</h2>
-                <div class="slider-container">
-                    <div class="slider">
-                        <div class="slide"><img src="https://png.pngtree.com/thumb_back/fh260/background/20240408/pngtree-3d-beautiful-anime-girl-celebrating-birthday-party-decoration-image_15710185.jpg" alt="Image 1"></div>
-                        <div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzHXhwsaTHfETKR-ApdjHgxV0rboudGMD2lfPMxwJCDyNKgXZxbtUxjKZc4y--CE2jFRU&usqp=CAU" alt="Image 2"></div>
-                        <div class="slide"><img src="https://files.oaiusercontent.com/file-JdPB6tTA5Ji3TihzZeHH8h?se=2025-02-23T05%3A59%3A36Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D9f3bb33c-eb99-4a90-bd83-2e3d54f32a12.webp&sig=eKgWxFo8P7tBBlbC5Lb3uvpfB5nXHvaaiGJVzzCDkyQ%3D" alt="Image 3"></div>
-                        
-                        <div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTgNlw2_K8y-uUxeACAmVrp9yBJkDbqvYHiA&s" alt="image 4"></div>
-                        <div class="slide"><img src="https://i.pinimg.com/736x/e0/00/be/e000be60adeebd076926c61abca3ec43.jpg" alt="image 5"></div>
-                    </div>
-                    <button class="prev" onclick="prevSlide()">❮</button>
-                    <button class="next" onclick="nextSlide()">❯</button>
-                </div>
-                <p>🌸✨ जन्मदिन मुबारक हो ✨🌸
-
-                    हर लम्हा आपकी हँसी से सजा रहे,
-                    हर ख्वाब आपका हकीकत बना रहे।
-                    दुआ है रब से ये दिल से हमारी,
-                    आपका हर दिन खुशियों से भरा रहे।
-                    
-                    सूरज की तरह चमके आपका हर सवेरा,
-                    फूलों की तरह महके जीवन का सवेरा।
-                    हर खुशी आपके कदम चूमे,
-                    हर ग़म आपसे दूर रहे सदा का बसेरा।</p>
-                    
-
-                <img src="https://i.pinimg.com/550x/8d/52/c5/8d52c5c35382908832ffedb21c1e63b0.jpg" alt="">
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/033/161/655/small/ai-generated-cute-little-girl-holding-a-bouquet-of-flowers-in-mothers-day-international-womens-day-st-valentines-day-concept-copy-space-photo.jpg" alt="">
-                <img src="https://i.pinimg.com/736x/e3/bc/6e/e3bc6e6a32c5b4cea8c58fdafa60cebc.jpg" alt="">
-                <img src="https://png.pngtree.com/thumb_back/fh260/background/20240408/pngtree-3d-beautiful-anime-girl-celebrating-birthday-party-decoration-image_15710185.jpg" alt="">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzHXhwsaTHfETKR-ApdjHgxV0rboudGMD2lfPMxwJCDyNKgXZxbtUxjKZc4y--CE2jFRU&usqp=CAU" alt="">
-                <img src="https://files.oaiusercontent.com/file-JdPB6tTA5Ji3TihzZeHH8h?se=2025-02-23T05%3A59%3A36Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D9f3bb33c-eb99-4a90-bd83-2e3d54f32a12.webp&sig=eKgWxFo8P7tBBlbC5Lb3uvpfB5nXHvaaiGJVzzCDkyQ%3D" alt="">
-                <img src="https://files.oaiusercontent.com/file-6dX2Zzm3ErJuKNUhArVzQQ?se=2025-02-23T06%3A00%3A43Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Ded4c4576-38fc-461d-98ba-6aec54abdb9b.webp&sig=eya2lBgTRlq0Owti6tY9DjH4u2IlcjfC56ITuwho6Po%3D" alt="">
-                <img src="https://files.oaiusercontent.com/file-GW2PeToS4JNpy32RWMSrqb?se=2025-02-23T08%3A10%3A04Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D935d29a6-f3e2-446c-b272-a38e01bc0da2.webp&sig=vTH5rkhMZm4R5WJW2CAFDNvkuw68H5TTFAkwKKpcBYY%3D" alt="">
-                <img src="https://files.oaiusercontent.com/file-916VWkFqVqL9UFiNCFiwxp?se=2025-02-23T08%3A11%3A50Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D6e86d566-26f4-4828-8eac-80f37f9e27c5.webp&sig=ZtcQSTp/XpdnzJAXfsh%2BgYmUbZQvMPvzUTz6ad/M4Pg%3D" alt="">
-                
-            </div>
+        <div class="nav-return border">
+            <p><span>Return</span></p>
+            <p class="nav-second">& Orders</p>
+        </div>
+        <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
         </div>
     </div>
-    <script src="script.js"></script>
-</body>
+    <div class="panel">
+        <div class="panel-all">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
 
+        <div class="panel-ops">
+            <p>Today's Deals</p>
+            <p>Customer Services</p>
+            <p>Registry</p>
+            <p>Gift cards</p>
+            <p>Sell</p>
+        </div>
+        <div class="panels-dels">
+            Shop deals in Electronic
+        </div>
+    </div>
+</header>
+<div class="hero-section">
+    <div class="hero-msg">
+        <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.   <a>  Click here to go to amazon.in </a></p>
+    </div>
+</div>
+
+<div class="shop-section">
+    <div class="box1 box">
+       <div class="box-content">
+        <h2> Men's Cloths</h2>
+        <div class="box-img" style="background-image: url('box1_image.jpg');"></div>
+        <p>See More</p>
+       </div>
+    </div>
+    <div class="box2 box">
+        <div class="box-content">
+            <h2>Health & Persnal Care</h2>
+            <div class="box-img" style="background-image: url('box2_image.jpg');"></div>
+            <p>See More</p>
+           </div>
+    </div>
+    <div class="box3 box">
+        <div class="box-content">
+            <h2>Ferniture</h2>
+            <div class="box-img" style="background-image: url('box3_image.jpg');"></div>
+            <p>See More</p>
+           </div>
+    </div>
+    <div class="box4 box">
+        <div class="box-content">
+            <h2>Smart Phones</h2>
+            <div class="box-img" style="background-image: url('box4_image.jpg');"></div>
+            <p>See More</p>
+           </div>
+    </div>
+    
+    <div class="box1 box">
+        <div class="box-content">
+         <h2> Beauty & Picks</h2>
+         <div class="box-img" style="background-image: url('box5_image.jpg');"></div>
+         <p>See More</p>
+        </div>
+     </div>
+     <div class="box2 box">
+         <div class="box-content">
+             <h2>Pet Care</h2>
+             <div class="box-img" style="background-image: url('box6_image.jpg');"></div>
+             <p>See More</p>
+            </div>
+     </div>
+     <div class="box3 box">
+         <div class="box-content">
+             <h2>New Arrival in Toys</h2>
+             <div class="box-img" style="background-image: url('box7_image.jpg');"></div>
+             <p>See More</p>
+            </div>
+     </div>
+     <div class="box4 box">
+         <div class="box-content">
+             <h2>Discover Fashion Trends</h2>
+             <div class="box-img" style="background-image: url('box8_image.jpg');"></div>
+             <p>See More</p>
+            </div>
+     </div>
+</div>
+<footer>
+    <div class="foot-panel">
+        Back to Top
+    </div>
+    <div class="foot-panel2">
+        <ul>
+            <p>Grt to know us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+        </ul>
+        <ul>
+            <p>Grt to know us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+        </ul>
+        <ul>
+            <p>Grt to know us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+        </ul>
+        <ul>
+            <p>Grt to know us</p>
+            <a>Careers</a>
+            <a>Blog</a>
+            <a>About Amazon</a>
+            <a>Investor Relations</a>
+            <a>Amazon Devices</a>
+            <a>Amazon Science</a>
+        </ul>
+    </div>
+    <div class="foot-panel-3">
+        <div class="logo"></div>
+    </div>
+    <div class="foot-panel4">
+        <div class="pages">
+            <a>Condition Of Use</a>
+            <a>Privacy Notice</a>
+            <a>Your ads Privacy Choices</a>
+        </div>
+        <div class="copyright">
+            © 1996-2025, Amazon.com, Inc. or its affiliates
+        </div>
+    </div>
+</footer>
+</body>
 </html>
